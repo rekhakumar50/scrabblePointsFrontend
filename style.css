@@ -1,0 +1,180 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+body {
+  display: flex;
+  padding: 0 10px;
+  min-height: 100vh;
+  align-items: center;
+  justify-content: center;
+  background: #e2dcc8;
+}
+.wrapper {
+  width: 830px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+}
+.wrapper .content {
+  margin: 25px 25px 35px;
+}
+.content .inputs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.inputs input {
+  height: 57px;
+  width: 56px;
+  margin: 4px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #e2dcc8;
+  text-align: center;
+  border-radius: 5px;
+  background: none;
+
+  text-transform: uppercase;
+  border: 1px solid #b5b5b5;
+}
+.typing-input {
+  opacity: 0;
+  z-index: -999;
+  position: absolute;
+  pointer-events: none;
+}
+.inputs input:first-child {
+  margin-left: 0px;
+}
+.allbuttons {
+  padding-top: 15px;
+  padding-left: 10%;
+}
+.content .reset-btn {
+  width: 30%;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  outline: none;
+  padding: 15px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #e2dcc8;
+  transition: all 0.3s ease;
+}
+
+.save-btn {
+  width: 30%;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  outline: none;
+  padding: 15px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #e2dcc8;
+  transition: all 0.3s ease;
+}
+
+.topscore-btn {
+  width: 30%;
+  border: none;
+  cursor: pointer;
+  color: #000;
+  outline: none;
+  padding: 15px 0;
+  font-size: 17px;
+  border-radius: 5px;
+  background: #e2dcc8;
+  transition: all 0.3s ease;
+}
+.content .reset-btn:hover {
+  background: #e2ccb8;
+}
+
+.save-btn:hover {
+  background: #e2ccb8;
+}
+
+.topscore-btn:hover {
+  background: #e2ccb8;
+}
+
+
+
+.title-word {
+  --color-1: #DF8453;
+}
+
+
+.container {
+  display: grid;
+  place-items: center;  
+  text-align: center;
+  height: 20vh
+}
+
+.title {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 80;
+  font-size: 3.5vw;
+  text-transform: uppercase;
+}
+
+.title2 {
+  font-family: "Montserrat", sans-serif;
+  font-weight: 60;
+  font-size: 2.5vw;
+  text-transform: uppercase;
+}
+
+@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700');
+
+$base-spacing-unit: 24px;
+$half-spacing-unit: $base-spacing-unit / 2;
+
+$color-alpha: #1772FF;
+$color-form-highlight: #EEEEEE;
+
+*, *:before, *:after {
+	box-sizing:border-box;
+}
+
+
+.table {
+	width:100%;
+	border:1px solid $color-form-highlight;
+}
+
+.table-header {
+	display:flex;
+	width:100%;
+	background:#000;
+	padding:($half-spacing-unit * 1.5) 0;
+}
+
+.table-row {
+	display:flex;
+	width:100%;
+	padding:($half-spacing-unit * 1.5) 0;
+	
+	&:nth-of-type(odd) {
+		background:$color-form-highlight;
+	}
+}
+
+.table-data, .header__item {
+	flex: 1 1 20%;
+	text-align:center;
+
+}
+
+.header__item {
+	text-transform:uppercase;
+	color:white;
+}

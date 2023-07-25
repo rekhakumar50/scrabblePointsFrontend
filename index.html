@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+	<head>
+		<meta charset="utf-8" />
+		<title>Scrablle Points Calculator</title>
+		<link rel="stylesheet" href="style.css" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	</head>
+	<body>
+	<div class="wrapper">
+		<div class="container" readonly>
+			<h6 class="title">
+				<span class="title-word">Scrablle</span>
+				<span class="title-word">Points</span>
+				<span class="title-word">Calculator</span>
+			</h6>
+		</div>
+		
+		<div class="content">
+			<input type="text" class="typing-input" maxlength="1" />
+			<div id="inputs" class="inputs" >
+				<input type="text" class="test" id="i1" maxlength="1" onkeyup="calcScore()">
+				<input type="text" class="test" id="i2" maxlength="1" onkeyup="calcScore()">
+				<input type="text" class="test" id="i3" maxlength="1" onkeyup="calcScore()">
+				<input type="text" class="test" id="i4" maxlength="1" onkeyup="calcScore()">
+				<input type="text" class="test" id="i5" maxlength="1" onkeyup="calcScore()">
+				<input type="text" class="test" id="i6" maxlength="1" onkeyup="calcScore()">
+				<input type="text" class="test" id="i7" maxlength="1" onkeyup="calcScore()">
+				<input type="text" class="test" id="i8" maxlength="1" onkeyup="calcScore()">
+				<input type="text" class="test" id="i9" maxlength="1" onkeyup="calcScore()">
+				<input type="text" class="test" id="i10" maxlength="1" onkeyup="calcScore()">
+			</div>
+			
+			<div class="container">
+				<h6 class="title2">
+					<span class="title-word">Score: </span><span type="number" id='printScore'>0 </span>
+				</h6>
+			</div>
+
+			<div class="allbuttons">
+				<button class="reset-btn" onclick="clearChildren(document.getElementById('inputs'))">Reset Game</button>
+				<button class="save-btn" onclick="saveScore(document.getElementById('printScore').value)">Save Score</button>
+				<button class="topscore-btn" onclick="topScore()">Top Scores</button>
+			</div>
+		
+			<div id="scorecardtable" style="width:640px; margin-left:10%; margin-top:30px;display:none;>
+				<div class="table">
+					<div class="table-header">
+						<div class="header__item">Rank</div>
+						<div class="header__item">Word</div>
+						<div class="header__item">Score</div>
+					</div>
+					<div id="tabledata" class="table-content" style="height:250px;"></div>	
+				</div>
+			</div>
+		</div>
+    </div>
+	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+	<script src="js/script.js"></script>
+	</body>
+</html>
